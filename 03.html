@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding:0;border: 0;list-style: none;text-decoration: none;}
+       
+        #wrap{width: 100%;}
+        #header{
+            float: left;
+            width: 100%;
+            height: 120px;
+            display: flex; justify-content: center;
+        }
+
+        #headin{
+            display: flex;
+            justify-content: space-between;
+            width: 1300px;
+            height: 120px;
+            background-color: burlywood;
+        }
+        #headin .logo{width: 120px;height: 120px;
+                    background-color: aqua;color: #fff;
+                    text-align: center;line-height: 120px;}
+           
+        #headin .nav{width: 600px;height: 120px;background-color: bisque;
+            display: flex; align-items: center;}
+        #headin .nav >ul{width: 100%;display: flex;justify-content: space-between;}
+    
+        #mainimg{float: left;
+            width: 100%;height: 350px;
+                background-color: blue;}
+        #contents{width: 100%;}
+        #contents_in{margin: 0 auto; width: 1300px;}
+        #contents_in > article{float: left;}
+        #contents_in .con1{width: 400px; height: 150px;
+        background-color: coral;}
+        #contents_in .con2{width: 500px; height: 150px;
+        background-color: rgb(209, 47, 185);}
+        #contents_in .con3{width: 400px; height: 150px;
+        background-color: rgb(44, 144, 162);}
+        #contents_in .con4{width: 400px; height: 150px;
+        background-color: rgb(128, 230, 73);}
+        #contents_in .con5{width: 500px; height: 150px;
+        background-color: rgb(137, 64, 210);}
+        #contents_in .con6{width: 400px; height: 150px;
+        background-color: rgb(213, 28, 28);}
+        #contents_in .con7{width: 100%; height: 150px;
+        background-color: rgb(212, 233, 20);}
+
+        #footer{float: left; width: 100%;height: 150px;background-color: tomato;}
+
+        @media screen and (max-width:1300px){
+            #headin{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            height: 120px;
+            background-color: burlywood;
+        }
+    }
+        #contents_in{margin: 0 auto; width: 100%;}
+
+        #contents_in .con1{width: 30%; height: 150px;
+        background-color: coral;}
+        #contents_in .con2{width: 40%; height: 150px;
+        background-color: rgb(209, 47, 185);}
+        #contents_in .con3{width: 30%; height: 150px;
+        background-color: rgb(44, 144, 162);}
+
+        #contents_in .con4{width: 30%; height: 150px;
+        background-color: rgb(128, 230, 73);}
+        #contents_in .con5{width: 40%; height: 150px;
+        background-color: rgb(137, 64, 210);}
+        #contents_in .con6{width: 30%; height: 150px;
+        background-color: rgb(213, 28, 28);}
+
+        @media screen and (max-width:1100px) {
+            #headin{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 120px;
+            background-color: burlywood;
+        }
+
+        #contents_in{margin: 0 auto; width: 100%;}
+
+        #contents_in .con1{width: 50%; height: 150px;
+        background-color: coral;}
+        #contents_in .con2{width: 50%; height: 150px;
+        background-color: rgb(209, 47, 185);}
+        #contents_in .con3{width: 30%; height: 150px;
+        background-color: rgb(44, 144, 162);display: none;}
+
+        #contents_in .con4{width: 30%; height: 150px;
+        background-color: rgb(128, 230, 73);}
+        #contents_in .con5{width: 40%; height: 150px;
+        background-color: rgb(137, 64, 210);}
+        #contents_in .con6{width: 30%; height: 150px;
+        background-color: rgb(213, 28, 28);}
+        }
+        @media screen and (max-width:800px) {
+            #headin{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 140px;
+            align-items: center;
+            background-color: burlywood;
+        }
+        #headin .logo{width: 120px;height: 60px;
+                    background-color: aqua;color: #fff;
+                    text-align: center;line-height: 120px;}
+           
+        #headin .nav{width: 600px;height: 80px;background-color: bisque;
+            display: flex; align-items: center;}
+        #headin .nav >ul{width: 100%;display: flex;justify-content: space-between;}
+
+        #contents_in{margin: 0 auto; width: 100%;}
+        #contents_in > article{float:none;}
+        #contents_in .con1{width: 100%; height: 150px;
+        background-color: coral;}
+        #contents_in .con2{width: 100%; height: 150px;
+        background-color: rgb(209, 47, 185);}
+        #contents_in .con3{width: 100%; height: 150px;
+        background-color: rgb(44, 144, 162);display: block;}
+
+        #contents_in .con4{width: 100%; height: 150px;
+        background-color: rgb(128, 230, 73);}
+        #contents_in .con5{width: 100%; height: 150px;
+        background-color: rgb(137, 64, 210);}
+        #contents_in .con6{width: 100%; height: 150px;
+        background-color: rgb(213, 28, 28);}
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div id="headin">
+            <div class="logo">logo</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">MENU</a></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+        <section id="mainimg">
+                mainimg
+        </section>
+        <section id="contents">
+            <div id="contents_in">
+                <article class="con1">con1</article>
+                <article class="con2">con2</article>
+                <article class="con3">con3</article>
+                <article class="con4">con4</article>
+                <article class="con5">con5</article>
+                <article class="con6">con6</article>
+                <article class="con7">con7</article>
+            </div>
+        </section>
+        <footer id="footer">footer</footer>
+    </div>    
+</body>
+</html>
+
+
